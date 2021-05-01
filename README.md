@@ -5,7 +5,7 @@ This repository provides a single stand-alone portable C++ header file ([SheppLo
 2) The code deliberately avoids anti-aliasing so that every pixel contained in the phantom image corresponds to one of the specified grey-level intensities.
 3) The shape, position, intensity and orientation of the ellipses can be customized via an input array.
 
-![alt text](https://github.com/nodecomplete/SheppLogan/blob/master/PhantomImage.jpg)
+![alt text](https://github.com/nodecomplete/Shepp-Logan-Phantom/blob/master/PhantomImage.jpg)
 
  
 The original paper can be found [here](https://web.archive.org/web/20160304035526/http://stat.wharton.upenn.edu/~shepp/publications/33.pdf)
