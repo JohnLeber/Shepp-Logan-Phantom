@@ -13,6 +13,7 @@ struct CSLPEllipse
 		nMinorAxis = 0;
 		nTheta = 0;
 		nGrayLevel = 0;
+		bool bValid = false;
 	}	
 	CSLPEllipse(double centerX, double centerY, double majorAxis, double minorAxis, double theta, double grayLevel)
 	{
@@ -24,13 +25,13 @@ struct CSLPEllipse
 		nGrayLevel = grayLevel;
 		bValid = true;
 	}
-	bool bValid = false;
-	double nCenterX = 0;
-	double nCenterY = 0;
-	double nMajorAxis = 0;
-	double nMinorAxis = 0;
-	double nTheta = 0;
-	double nGrayLevel = 0;
+	bool bValid;
+	double nCenterX;
+	double nCenterY;
+	double nMajorAxis;
+	double nMinorAxis;
+	double nTheta;
+	double nGrayLevel;
 };
 //--------------------------------------------------------------------//
 class CSLP
@@ -57,20 +58,19 @@ class CSLP
 				double ry = ellipse.nMinorAxis * nHeight / 2;
 				double nEllipseCenterX = nCenterX + ellipse.nCenterX * nWidth / 2;
 				double nEllipseCenterY = nCenterY + ellipse.nCenterY * nHeight / 2;
-				float xnew = x * cos(nAngle) - y * sin(nAngle);
 				if (nAngle != 0)
 				{
-					nAngle = -nAngle;//reverse angle because we are keeping the ellipse unrotated and are rotating the refernce frame around it
+					nAngle = -nAngle;//reverse angle because we are keeping the ellipse unrotated and are rotating elverything else around it
 					x = x - nEllipseCenterX;
 					y = y - nEllipseCenterY;
 					// rotate point around ellipse center
-					float xnew = x * cos(nAngle) - y * sin(nAngle);
-					float ynew = x * sin(nAngle) + y * cos(nAngle);
+					double xnew = x * cos(nAngle) - y * sin(nAngle);
+					double ynew = x * sin(nAngle) + y * cos(nAngle);
 					//and translate point back
 					x = xnew + nEllipseCenterX;
 					y = ynew + nEllipseCenterY;
 				}
-				//check to see if the point contained in the ellipse
+				//check to see if the point is contained in the ellipse
 				if ((x - nEllipseCenterX) * (x - nEllipseCenterX) / rx / rx +
 					(y - nEllipseCenterY) * (y - nEllipseCenterY) / ry / ry <= 1)
 				{
@@ -80,11 +80,7 @@ class CSLP
 		}
 	}
 public:
-	CSLP()
-	{
-
-	}
-	
+ 
 	static bool Render(long nWidth, long nHeight, float** ppImage, float nBackgroundColour = 0, CSLPEllipse* pEllipse = 0, long nNumEllipse = 0)
 	{
 		CSLPEllipse ellipse[MaxEllipses];
