@@ -8,3 +8,4 @@ This project provides a single stand-alone portable C++ header file ([SheppLogon
 ![alt text](https://github.com/nodecomplete/SheppLogon/blob/master/PhantomImage.jpg)
 
  
+The original paper can be found [here](https://web.archive.org/web/20160304035526/http://stat.wharton.upenn.edu/~shepp/publications/33.pdf)
