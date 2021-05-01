@@ -4,8 +4,8 @@
 
 #include "pch.h"
 #include "framework.h"
-#include "SheppLogon.h"
-#include "SheppLogonDlg.h"
+#include "SheppLogan.h"
+#include "SheppLoganDlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW

@@ -24,6 +24,7 @@
     <Keyword>MFCProj</Keyword>
     <RootNamespace>SheppLogon</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>SheppLogan</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -183,12 +184,12 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="SheppLogonPhantom.h" />
+    <ClInclude Include="SheppLoganPhantom.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="SheppLogon.h" />
-    <ClInclude Include="SheppLogonDlg.h" />
+    <ClInclude Include="SheppLogan.h" />
+    <ClInclude Include="SheppLoganDlg.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
@@ -198,17 +199,17 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SheppLogon.cpp" />
-    <ClCompile Include="SheppLogonDlg.cpp" />
+    <ClCompile Include="SheppLogan.cpp" />
+    <ClCompile Include="SheppLoganDlg.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="SheppLogon.rc" />
+    <ResourceCompile Include="SheppLogan.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\SheppLogon.rc2" />
+    <None Include="res\SheppLogan.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\SheppLogon.ico" />
+    <Image Include="res\SheppLogqn.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

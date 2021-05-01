@@ -5,7 +5,7 @@
 #define IDM_ABOUTBOX                    0x0010
 #define IDD_ABOUTBOX                    100
 #define IDS_ABOUTBOX                    101
-#define IDD_SHEPPLOGON_DIALOG           102
+#define IDD_SHEPPLOGAN_DIALOG           102
 #define IDR_MAINFRAME                   128
 #define IDC_WIDTH                       1000
 #define IDC_WHITE                       1001

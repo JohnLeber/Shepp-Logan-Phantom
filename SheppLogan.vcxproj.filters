@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SheppLogon.h">
+    <ClInclude Include="SheppLogan.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SheppLogonDlg.h">
+    <ClInclude Include="SheppLoganDlg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="framework.h">
@@ -33,15 +33,15 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SheppLogonPhantom.h">
+    <ClInclude Include="SheppLoganPhantom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SheppLogon.cpp">
+    <ClCompile Include="SheppLogan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SheppLogonDlg.cpp">
+    <ClCompile Include="SheppLoganDlg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
@@ -49,17 +49,17 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="SheppLogon.rc">
+    <ResourceCompile Include="SheppLogan.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\SheppLogon.rc2">
+    <None Include="res\SheppLogan.rc2">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\SheppLogon.ico">
+    <Image Include="res\SheppLogqn.ico">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

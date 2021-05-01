@@ -4,9 +4,9 @@
 
 #include "pch.h"
 #include "framework.h"
-#include "SheppLogon.h"
-#include "SheppLogonDlg.h"
-#include "SheppLogonPhantom.h"
+#include "SheppLogan.h"
+#include "SheppLoganDlg.h"
+#include "SheppLoganPhantom.h"
 #include "afxdialogex.h"
 
 #ifdef _DEBUG
@@ -48,7 +48,7 @@ END_MESSAGE_MAP()
 //--------------------------------------------------------------------//
 // CSheppLogonDlg dialog
 CSheppLogonDlg::CSheppLogonDlg(CWnd* pParent /*=nullptr*/)
-	: CDialogEx(IDD_SHEPPLOGON_DIALOG, pParent)
+	: CDialogEx(IDD_SHEPPLOGAN_DIALOG, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
