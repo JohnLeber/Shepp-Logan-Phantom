@@ -46,7 +46,7 @@ BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
 END_MESSAGE_MAP()
 
 //--------------------------------------------------------------------//
-// CSheppLogonDlg dialog
+// CSheppLogonDlg dialog 
 CSheppLogonDlg::CSheppLogonDlg(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_SHEPPLOGAN_DIALOG, pParent)
 {
