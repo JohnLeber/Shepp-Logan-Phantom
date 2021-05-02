@@ -13,7 +13,7 @@ struct CSLPEllipse
 		nMinorAxis = 0;
 		nTheta = 0;
 		nGrayLevel = 0;
-		bool bValid = false;
+		bValid = false;
 	}	
 	CSLPEllipse(double centerX, double centerY, double majorAxis, double minorAxis, double theta, double grayLevel)
 	{
